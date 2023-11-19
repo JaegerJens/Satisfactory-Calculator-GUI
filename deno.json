@@ -1,0 +1,6 @@
+{
+  "exclude": ["public", "client"],
+  "tasks": {
+    "dev": "deno run --watch ./server/main.ts"
+  }
+}

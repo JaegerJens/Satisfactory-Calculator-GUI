@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satisfactory Calculator GUI</title>
+</head>
+<body>
+    <h1>Satisfactory Factory Planner</h1>
+    <section>
+        <h2>Parameters</h2>
+        <label for="calc-duration">Calculation interval</label>
+        <select name="" id="calc-interval">
+            <option>Minutes</option>
+            <option>Seconds</option>
+        </select>
+
+        <h3>Target</h3>
+        
+        <label for="target-item">Target item production</label>
+        <select name="target-item" id="target-item">
+            <option value="hmf">Heavy Modular Frame</option>
+        </select>
+        
+        <label for="target-recipe">Item recipe</label>
+        <select name="target-recipe" id="target-recipe">
+            <option value="heavy-encased-frame">Heavy Encased Frame</option>
+        </select>
+        
+        <label for="target-building-count">Building count</label>
+        <input type="number" name="target-building-count" id="target-building-count" value="1">
+        
+        <label for="target-item-count">Target iten count</label>
+        <input type="number" name="target-item-count" id="target-item-count" value="3">
+
+        <h3>Recipe preferences</h3>
+        <ul>
+            <li>
+                <select>
+                    <option>Heavy Modular Frame</option>
+                    <option selected>Heavy Encased Frame</option>
+                    <option>Heavy Flexible Frame</option>
+                </select>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Factory plan</h2>
+        
+        <h3>Factory buildings</h3>
+        <table>
+            <tr>
+                <th>Building</th>
+                <th>count</th>
+            </tr>
+            <tr>
+                <td>Manufacturer</td>
+                <td>1</td>
+            </tr>
+        </table>
+
+        <h3>Item balance</h3>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Production</th>
+                <th>Consumption</th>
+            </tr>
+            <tr>
+                <td>Heavy Modular Frame</td>
+                <td>3</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Modular Frame</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Encased Industrial Beam</td>
+                <td>10</td>
+                <td>9.375</td>
+            </tr>
+            <tr>
+                <td>Steel Pipe</td>
+                <td>34</td>
+                <td>33.75</td>
+            </tr>
+            <tr>
+                <td>Concrete</td>
+                <td>22</td>
+                <td>20.625</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
